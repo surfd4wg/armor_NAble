@@ -1,0 +1,1 @@
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest https://agent.armor.com/latest/armor_agent.ps1 -outfile armor_agent.ps1 ; .\armor_agent.ps1 -license  $inputARMORlicense -region us-west-armor -full
